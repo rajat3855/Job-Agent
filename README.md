@@ -1,8 +1,8 @@
-# 🎯 JobAgent AI
+#  JobAgent AI
 
 An AI-powered job application agent that searches for jobs, tailors your resume, and writes cover letters — all from a single chat interface.
 
-## ✨ Features
+## Features
 
 - **Job Search** — Finds real job listings via Tavily web search
 - **Resume Analysis** — Scores your fit (0–100) against any job description
@@ -10,7 +10,7 @@ An AI-powered job application agent that searches for jobs, tailors your resume,
 - **Cover Letters** — Generates personalized, compelling cover letters
 - **Application Tracker** — Tracks all your applications with status updates
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 | Layer | Tech |
 |-------|------|
@@ -20,7 +20,7 @@ An AI-powered job application agent that searches for jobs, tailors your resume,
 | UI | Streamlit |
 | Resume Parsing | pypdf |
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone & Install
 
@@ -50,7 +50,7 @@ streamlit run app.py
 
 Open `http://localhost:8501` in your browser.
 
-## 🧑‍💻 How to Use
+## How to Use
 
 1. Enter your API keys in the sidebar
 2. Upload your resume (PDF or TXT) or paste it
@@ -61,7 +61,7 @@ Open `http://localhost:8501` in your browser.
    - *"Find AI Engineer jobs and write me a cover letter for the top result"*
 5. Track your applications in the **Application Tracker** tab
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 job-agent/
@@ -78,7 +78,7 @@ job-agent/
 └── .env.example
 ```
 
-## 🔧 Customizing the Agent
+## Customizing the Agent
 
 **Change the LLM model** in `agent/job_agent.py`:
 ```python
@@ -89,16 +89,10 @@ llm = ChatAnthropic(model="claude-opus-4-5")  # or claude-haiku-4-5 for speed
 
 **Modify the agent's behavior** by editing `SYSTEM_PROMPT` in `agent/job_agent.py`.
 
-## 📸 Screenshots
+## Screenshots
 
 The app has two tabs:
 - **Agent Chat** — conversational interface with quick-action buttons
 - **Application Tracker** — dashboard with status metrics and update controls
 
-## 🎤 What to Say in Interviews
 
-> *"I built a multi-tool LangChain agent using Claude that automates the entire job application workflow. It uses Tavily for real-time job search, performs resume-to-JD matching with gap analysis, rewrites resume bullet points using keyword optimization, and generates personalized cover letters. The system maintains a persistent application tracker with status management."*
-
----
-
-Built as an AI/ML Engineering portfolio project.
